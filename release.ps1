@@ -24,7 +24,20 @@ if ($null -eq $node) {
 $node.InnerText = $Version
 $xml.Save($projPath)
 
+# Build and test locally before pushing
+Write-Host "Building..."
+dotnet build $projPath -c Release --no-restore
+if ($LASTEXITCODE -ne 0) { throw "Build failed" }
+
+Write-Host "Running unit tests..."
+dotnet test test/VmaCS.Tests.Unit/VmaCS.Tests.Unit.csproj -c Release --no-build
+if ($LASTEXITCODE -ne 0) { throw "Unit tests failed" }
+
+Write-Host "Running ported tests..."
+dotnet test test/VmaCS.Tests.Ported/VmaCS.Tests.Ported.csproj -c Release --no-build
+if ($LASTEXITCODE -ne 0) { throw "Ported tests failed" }
+
 git add $projPath
-git commit -m "bump version to $Version"
+git commit -m "chore: bump version to $Version"
 git tag "v$Version"
 git push origin "v$Version"
