@@ -21,10 +21,7 @@
     <PackageReference Include="Silk.NET.Vulkan.Extensions.KHR" />
     <PackageReference Include="Silk.NET.Shaderc" />
     <PackageReference Include="Silk.NET.Windowing" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\src\VmaCS\VmaCS.csproj" />
+    <PackageReference Include="VmaCS" />
   </ItemGroup>
 
   <ItemGroup>

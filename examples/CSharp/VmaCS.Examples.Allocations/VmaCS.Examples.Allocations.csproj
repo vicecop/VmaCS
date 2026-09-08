@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\VmaCS\VmaCS.csproj" />
+    <PackageReference Include="VmaCS" />
   </ItemGroup>
 
 </Project>
