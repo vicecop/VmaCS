@@ -1,0 +1,25 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageVersion Include="Silk.NET.Vulkan" Version="2.23.0" />
+    <PackageVersion Include="Silk.NET.Vulkan.Extensions.EXT" Version="2.23.0" />
+    <PackageVersion Include="Silk.NET.Vulkan.Extensions.KHR" Version="2.23.0" />
+    <PackageVersion Include="Silk.NET.GLFW" Version="2.23.0" />
+    <PackageVersion Include="Silk.NET.Shaderc" Version="2.23.0" />
+    <PackageVersion Include="Silk.NET.Windowing" Version="2.23.0" />
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageVersion Include="System.Memory" Version="4.6.3" />
+    <PackageVersion Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.2" />
+    <PackageVersion Include="System.Text.Json" Version="10.0.11" />
+    <PackageVersion Include="Microsoft.Bcl.HashCode" Version="6.0.0" />
+    <PackageVersion Include="Polyfill" Version="1.2.0" />
+    <PackageVersion Include="coverlet.msbuild" Version="6.0.2" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.9.0" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="4.0.0" />
+    <PackageVersion Include="xunit.v3.mtp-off" Version="4.0.0" />
+    <PackageVersion Include="BenchmarkDotNet" Version="0.14.0" />
+  </ItemGroup>
+</Project>

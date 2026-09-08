@@ -1,0 +1,270 @@
+﻿License notice for Microsoft.Bcl.HashCode (v6.0.0)
+------------------------------------
+
+https://github.com/dotnet/maintenance-packages at d0c2a5a83211e271826172a6b0510c25a52dbd53
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for NETStandard.Library (v2.0.3)
+------------------------------------
+
+https://dot.net/
+
+.NET Foundation and Contributors
+
+License available at https://github.com/dotnet/standard/blob/master/LICENSE.TXT
+
+
+License notice for Silk.NET.Vulkan (v2.23.0)
+------------------------------------
+
+https://github.com/dotnet/Silk.NET.git at 94605142f7b7bd6e69c9201e8e721d245c69eb7e
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for Silk.NET.Vulkan.Extensions.EXT (v2.23.0)
+------------------------------------
+
+https://github.com/dotnet/Silk.NET.git at 94605142f7b7bd6e69c9201e8e721d245c69eb7e
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for Silk.NET.Vulkan.Extensions.KHR (v2.23.0)
+------------------------------------
+
+https://github.com/dotnet/Silk.NET.git at 94605142f7b7bd6e69c9201e8e721d245c69eb7e
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for System.Memory (v4.6.3)
+------------------------------------
+
+https://github.com/dotnet/maintenance-packages at f62ca0009b038cab4725a720f386623a969d73ad
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for System.Runtime.CompilerServices.Unsafe (v6.1.2)
+------------------------------------
+
+https://github.com/dotnet/maintenance-packages at f62ca0009b038cab4725a720f386623a969d73ad
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for System.Text.Json (v10.0.11)
+------------------------------------
+
+https://github.com/dotnet/dotnet at e2f47b0110ed922f21a1522da67279133ce28f32
+
+https://dot.net/
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for Microsoft.Bcl.AsyncInterfaces (v10.0.11)
+------------------------------------
+
+https://github.com/dotnet/dotnet at e2f47b0110ed922f21a1522da67279133ce28f32
+
+https://dot.net/
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for Microsoft.CSharp (v4.7.0)
+------------------------------------
+
+https://github.com/dotnet/corefx
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for Microsoft.DotNet.PlatformAbstractions (v3.1.6)
+------------------------------------
+
+git://github.com/dotnet/core-setup at 3acd9b0cd16596bad450c82be08780875a73c05c
+
+https://dot.net/
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Available at https://aka.ms/deprecateLicenseUrl
+
+LICENSE.TXT
+
+
+License notice for Microsoft.Extensions.DependencyModel (v9.0.9)
+------------------------------------
+
+https://github.com/dotnet/runtime at 893c2ebbd49952ca49e93298148af2d95a61a0a4
+
+https://dot.net/
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for Microsoft.NETCore.Platforms (v1.1.0)
+------------------------------------
+
+https://dot.net/
+
+Copyright © Microsoft Corporation.  All rights reserved.
+
+License available at http://go.microsoft.com/fwlink/?LinkId=329770
+
+
+License notice for Silk.NET.Core (v2.23.0)
+------------------------------------
+
+https://github.com/dotnet/Silk.NET.git at 94605142f7b7bd6e69c9201e8e721d245c69eb7e
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for System.Buffers (v4.6.1)
+------------------------------------
+
+https://github.com/dotnet/maintenance-packages at 6b84308c9ad012f53240d72c1d716d7e42546483
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for System.IO.Pipelines (v10.0.11)
+------------------------------------
+
+https://github.com/dotnet/dotnet at e2f47b0110ed922f21a1522da67279133ce28f32
+
+https://dot.net/
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for System.Numerics.Vectors (v4.6.1)
+------------------------------------
+
+https://github.com/dotnet/maintenance-packages at 6b84308c9ad012f53240d72c1d716d7e42546483
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for System.Text.Encodings.Web (v10.0.11)
+------------------------------------
+
+https://github.com/dotnet/dotnet at e2f47b0110ed922f21a1522da67279133ce28f32
+
+https://dot.net/
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for System.Threading.Tasks.Extensions (v4.6.3)
+------------------------------------
+
+https://github.com/dotnet/maintenance-packages at f62ca0009b038cab4725a720f386623a969d73ad
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for System.IO.Pipelines (v9.0.9)
+------------------------------------
+
+https://github.com/dotnet/runtime at 893c2ebbd49952ca49e93298148af2d95a61a0a4
+
+https://dot.net/
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for System.Text.Encodings.Web (v9.0.9)
+------------------------------------
+
+https://github.com/dotnet/runtime at 893c2ebbd49952ca49e93298148af2d95a61a0a4
+
+https://dot.net/
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+
+License notice for System.Text.Json (v9.0.9)
+------------------------------------
+
+https://github.com/dotnet/runtime at 893c2ebbd49952ca49e93298148af2d95a61a0a4
+
+https://dot.net/
+
+Copyright © Microsoft Corporation. All rights reserved.
+
+Licensed under MIT
+
+Available at https://licenses.nuget.org/MIT
+
+

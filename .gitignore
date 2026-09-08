@@ -1,0 +1,49 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+.vs/
+*.VisualState.xml
+artifacts/
+BenchmarkDotNet.Artifacts/
+[Bb]uild/
+
+## JetBrains Rider
+.idea/
+*.DotSettings.user
+
+## Visual Studio Code
+.vscode/
+*.code-workspace
+
+## Test results
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+coverage.opencover.xml
+
+## NuGet
+*.nupkg
+.nuget/
+project.lock.json
+packages/
+
+## Logs
+*.log
+logs/
+
+## OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+## Rider/VS local
+*.orig
+
+## Publish output
+publish/
+dist/

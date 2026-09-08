@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/examples/" />
+  <Folder Name="/examples/CSharp/">
+    <Project Path="examples/CSharp/VmaCS.Examples.Allocations/VmaCS.Examples.Allocations.csproj" />
+    <Project Path="examples/CSharp/VulkanCube/VulkanCube.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/VmaCS/VmaCS.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/VmaCS.Benchmarks/VmaCS.Benchmarks.csproj" />
+    <Project Path="test/VmaCS.Tests.Unit/VmaCS.Tests.Unit.csproj" />
+  </Folder>
+  <Folder Name="/test/VmaCS.Tests.Ported/">
+    <Project Path="test/VmaCS.Tests.Ported/VmaCS.Tests.Ported.csproj" />
+  </Folder>
+</Solution>

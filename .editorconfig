@@ -1,0 +1,140 @@
+root = true
+
+[*]
+charset = utf-8-bom
+end_of_line = crlf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+
+[*.cs]
+# Require explicit accessibility modifiers and file-scoped namespaces.
+dotnet_style_require_accessibility_modifiers = always:warning
+csharp_style_namespace_declarations = file_scoped:warning
+
+# Keep using directives outside namespaces and sort System directives first.
+csharp_using_directive_placement = outside_namespace:warning
+dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = false
+
+# Prefer var for local variables.
+csharp_style_var_for_built_in_types = true:warning
+csharp_style_var_when_type_is_apparent = true:warning
+csharp_style_var_elsewhere = true:warning
+
+# Prefer modern null checks, pattern matching, nameof, target-typed new, and switch expressions.
+dotnet_style_null_checking_for_reference_types = true:warning
+csharp_style_pattern_matching = true:warning
+csharp_style_prefer_switch_expression = true:warning
+csharp_style_implicit_object_creation_when_type_is_apparent = true:warning
+dotnet_diagnostic.IDE0041.severity = warning
+
+# Prefer readonly fields when they are never reassigned.
+dotnet_diagnostic.IDE0044.severity = warning
+
+# Braces are always placed on the following line.
+csharp_new_line_before_open_brace = all
+
+# Prefer expression-bodied members when the body contains one statement.
+csharp_style_expression_bodied_methods = true:warning
+csharp_style_expression_bodied_properties = true:suggestion
+csharp_style_expression_bodied_accessors = true:suggestion
+csharp_style_expression_bodied_constructors = false:suggestion
+csharp_style_expression_bodied_operators = true:suggestion
+csharp_style_expression_bodied_indexers = true:suggestion
+
+# Require braces for control-flow statements, including single-line if bodies.
+csharp_prefer_braces = true:warning
+dotnet_diagnostic.IDE0011.severity = warning
+
+# Do not qualify member access with this.
+dotnet_style_qualification_for_field = false:warning
+dotnet_style_qualification_for_property = false:warning
+dotnet_style_qualification_for_method = false:warning
+dotnet_style_qualification_for_event = false:warning
+dotnet_diagnostic.IDE0003.severity = warning
+
+# Keep member sorting enabled in the editor and analyzers.
+dotnet_sort_members = true
+dotnet_diagnostic.IDE0055.severity = warning
+dotnet_diagnostic.IDE1006.severity = warning
+
+# Naming styles.
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+dotnet_naming_style.private_member_style.required_prefix = _
+dotnet_naming_style.private_member_style.capitalization = camel_case
+dotnet_naming_style.constant_style.capitalization = all_upper
+dotnet_naming_style.interface_style.required_prefix = I
+dotnet_naming_style.interface_style.capitalization = pascal_case
+dotnet_naming_style.type_parameter_style.required_prefix = T
+dotnet_naming_style.type_parameter_style.capitalization = pascal_case
+dotnet_naming_style.async_method_style.required_suffix = Async
+dotnet_naming_style.async_method_style.capitalization = pascal_case
+
+dotnet_naming_symbols.interfaces.applicable_kinds = interface
+dotnet_naming_symbols.interfaces.applicable_accessibilities = *
+dotnet_naming_rule.interfaces_use_i_prefix.symbols = interfaces
+dotnet_naming_rule.interfaces_use_i_prefix.style = interface_style
+dotnet_naming_rule.interfaces_use_i_prefix.severity = warning
+
+dotnet_naming_symbols.type_parameters.applicable_kinds = type_parameter
+dotnet_naming_symbols.type_parameters.applicable_accessibilities = *
+dotnet_naming_rule.type_parameters_use_t_prefix.symbols = type_parameters
+dotnet_naming_rule.type_parameters_use_t_prefix.style = type_parameter_style
+dotnet_naming_rule.type_parameters_use_t_prefix.severity = warning
+
+dotnet_naming_symbols.constants.applicable_kinds = field, property
+dotnet_naming_symbols.constants.required_modifiers = const
+dotnet_naming_rule.constants_use_all_caps.symbols = constants
+dotnet_naming_rule.constants_use_all_caps.style = constant_style
+dotnet_naming_rule.constants_use_all_caps.severity = warning
+
+dotnet_naming_symbols.async_methods.applicable_kinds = method
+dotnet_naming_symbols.async_methods.applicable_accessibilities = *
+dotnet_naming_symbols.async_methods.required_modifiers = async
+dotnet_naming_rule.async_methods_use_async_suffix.symbols = async_methods
+dotnet_naming_rule.async_methods_use_async_suffix.style = async_method_style
+dotnet_naming_rule.async_methods_use_async_suffix.severity = warning
+
+dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum, delegate
+dotnet_naming_symbols.types.applicable_accessibilities = *
+dotnet_naming_rule.types_are_pascal_case.symbols = types
+dotnet_naming_rule.types_are_pascal_case.style = pascal_case
+dotnet_naming_rule.types_are_pascal_case.severity = warning
+
+dotnet_naming_symbols.methods.applicable_kinds = method
+dotnet_naming_symbols.methods.applicable_accessibilities = *
+dotnet_naming_rule.methods_are_pascal_case.symbols = methods
+dotnet_naming_rule.methods_are_pascal_case.style = pascal_case
+dotnet_naming_rule.methods_are_pascal_case.severity = warning
+
+dotnet_naming_symbols.public_api_members.applicable_kinds = field, property, event, method
+dotnet_naming_symbols.public_api_members.applicable_accessibilities = public
+dotnet_naming_rule.public_api_members_are_pascal_case.symbols = public_api_members
+dotnet_naming_rule.public_api_members_are_pascal_case.style = pascal_case
+dotnet_naming_rule.public_api_members_are_pascal_case.severity = warning
+
+dotnet_naming_symbols.protected_members.applicable_kinds = field, property, event
+dotnet_naming_symbols.protected_members.applicable_accessibilities = protected
+dotnet_naming_rule.protected_members_are_pascal_case.symbols = protected_members
+dotnet_naming_rule.protected_members_are_pascal_case.style = pascal_case
+dotnet_naming_rule.protected_members_are_pascal_case.severity = warning
+
+dotnet_naming_symbols.internal_members.applicable_kinds = field, property, event
+dotnet_naming_symbols.internal_members.applicable_accessibilities = internal
+dotnet_naming_rule.internal_members_are_pascal_case.symbols = internal_members
+dotnet_naming_rule.internal_members_are_pascal_case.style = pascal_case
+dotnet_naming_rule.internal_members_are_pascal_case.severity = warning
+
+dotnet_naming_symbols.private_members.applicable_kinds = field, property, event
+dotnet_naming_symbols.private_members.applicable_accessibilities = private
+dotnet_naming_rule.private_members_use_underscore_camel_case.symbols = private_members
+dotnet_naming_rule.private_members_use_underscore_camel_case.style = private_member_style
+dotnet_naming_rule.private_members_use_underscore_camel_case.severity = warning
+
+# Roslyn's built-in member sorter keeps fields and properties before
+# constructors and methods. Keep the intended visibility sequence documented here.
+# private fields/properties, public properties, public constructors, private
+# constructors, public methods, protected methods, internal methods, private methods.
+dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = false
