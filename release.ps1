@@ -10,16 +10,21 @@ $projPath = Join-Path $PSScriptRoot "src\VmaCS\VmaCS.csproj"
 [xml]$xml = Get-Content $projPath
 $ns = New-Object Xml.XmlNamespaceManager $xml.NameTable
 $ns.AddNamespace("msb", "http://schemas.microsoft.com/developer/msbuild/2003")
+
+# Try with namespace first (old-style), then without (SDK-style)
 $node = $xml.SelectSingleNode("//msb:Version", $ns)
+if ($null -eq $node) {
+    $node = $xml.SelectSingleNode("//Version")
+}
 
 if ($null -eq $node) {
-  throw "Version node not found in $projPath"
+    throw "Version node not found in $projPath"
 }
 
 $node.InnerText = $Version
 $xml.Save($projPath)
 
 git add $projPath
-git commit -m "chore: bump version to $Version"
+git commit -m "bump version to $Version"
 git tag "v$Version"
 git push origin "v$Version"
