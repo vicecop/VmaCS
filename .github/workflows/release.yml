@@ -36,14 +36,12 @@ jobs:
         run: dotnet pack src/VmaCS/VmaCS.csproj --no-build --configuration Release --output ./nupkg /p:Version=${{ steps.version.outputs.VERSION }}
 
       - name: Authenticate to NuGet.org via OIDC
-        id: nuget-token
-        run: |
-          RESPONSE=$(curl -s -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=api.nuget.org")
-          TOKEN=$(echo "$RESPONSE" | jq -r '.value')
-          echo "TOKEN=$TOKEN" >> $GITHUB_OUTPUT
+        uses: NuGet/login@v1
+        with:
+          user: ${{ secrets.NUGET_USER }}
 
       - name: Push to NuGet
-        run: dotnet nuget push ./nupkg/*.nupkg --api-key ${{ steps.nuget-token.outputs.TOKEN }} --source https://api.nuget.org/v3/index.json --skip-duplicate
+        run: dotnet nuget push ./nupkg/*.nupkg --source https://api.nuget.org/v3/index.json --skip-duplicate
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
